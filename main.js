@@ -38,8 +38,8 @@ function fn(array) {
     let arr = [1, 2, 3, 4, 5]
     let max_value = Math.max(...arr)
     console.log(max_value + 'Max son');
-    let a = max_value - array
-    console.log(a + 'Farqi');
+    let a = (array - max_value)
+    console.log(a + ' Farqi');
 
 
 
@@ -47,7 +47,7 @@ function fn(array) {
     let arr1 = [1, 2, 3, 4, 5]
     let min_value = Math.min(...arr1)
     console.log(min_value + 'min son');
-    let b = parseInt(min_value - array)
-    console.log(b + 'Farqi');
+    let c = (array - min_value)
+    console.log(c + ' Farqi');
 }
-fn()
+fn(10)
