@@ -1,13 +1,13 @@
 
 function fn(...params) {
-    target = 8
+    target = 5
     let arr = []
     for (let i = 0; i < params.length; i++) {
         if (params[i] == target) {
             arr.push(i)
         }
     }
-    console.log(arr);
+    console.log(arr.length ? arr: 'mavjud emas');
 }
 fn(5, 7, 7, 8, 8, 10)
 
@@ -34,20 +34,19 @@ console.log(result1);
 console.log("3-misol")
 
 
-function fn(array) {
-    let arr = [1, 2, 3, 4, 5]
-    let max_value = Math.max(...arr)
+function fn1(array) {
+    let ar = [1, 2, 3, 4, 5]
+    let max_value = Math.max(...ar)
     console.log(max_value + 'Max son');
     let a = (array - max_value)
     console.log(a + ' Farqi');
 
 
-
-
-    let arr1 = [1, 2, 3, 4, 5]
-    let min_value = Math.min(...arr1)
+    let ar1 = [1, 2, 3, 4, 5]
+    let min_value = Math.min(...ar1)
     console.log(min_value + 'min son');
     let c = (array - min_value)
     console.log(c + ' Farqi');
 }
-fn(10)
+fn1(10)
+
